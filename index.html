@@ -5,24 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommerce Website</title>
     <link href="./assets/css/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body
+    class="bg-white text-[#13192b]"
+    style="font-family: &quot;Inter&quot;, sans-serif"
+  >
     <header>
-      <div class="sale flex h-14 w-full items-center justify-center bg-black">
-        <p class="flex items-center gap-3 text-white">
+      <div
+        class="sale flex h-12 w-full items-center justify-center bg-[#0E1422]"
+      >
+        <p class="flex items-center gap-3 text-[14px] text-white">
           <span>Get 25% OFF on your first order.</span>
-          <a href="#" class="text-white">Order Now</a>
+          <a href="#" class="font-medium text-white">Order Now</a>
         </p>
       </div>
-      <div class="mx-[162px] mt-[22.5px] flex items-center justify-between">
-        <div class="flex items-center gap-8">
+      <div
+        class="container mx-auto flex h-[84px] items-center justify-between bg-white"
+      >
+        <div class="flex items-center gap-[40px]">
           <div class="logo">
-            <a href="./index.html" class="flex items-center gap-2">
-              <img src="./assets/icons/Logomark.png" alt="Ecommerce logo" />
-              <span>Ecommerce</span>
+            <a href="./index.html" class="flex items-center gap-3">
+              <img
+                src="./assets/icons/Logomark.png"
+                alt="Ecommerce logo"
+                class="h-[40px] w-[40px]"
+              />
+              <span class="text-[24px] font-semibold tracking-[-0.48px]">
+                Ecommerce
+              </span>
             </a>
           </div>
-          <nav class="list flex items-center gap-8 ml-[110px]">
+          <nav
+            class="list ml-[72px] flex items-center gap-[40px] text-[16px] text-[#5c6273]"
+          >
             <a href="#">Home</a>
             <div class="categories flex items-center">
               <a href="#">Categories</a>
@@ -34,55 +55,115 @@
             <a href="#">Contact</a>
           </nav>
         </div>
-        <div class="flex items-center">
-          <div class="searchbar flex items-center ml-29.75 mr-8">
+        <div class="flex items-center gap-[24px]">
+          <div
+            class="searchbar flex h-[44px] w-[280px] items-center gap-3 rounded-[6px] border border-[#E6E7E8] px-4"
+          >
+            <img src="./assets/icons/Search.svg" alt="Search" class="h-5 w-5" />
             <input
               type="search"
               name="searchbar"
-              placeholder="Search"
-              class="border"
+              placeholder="Search products"
+              class="w-full text-[14px] text-[#5c6273] outline-none"
             />
           </div>
-          <div class="icons flex items-center gap-8">
-            <a href="#"><img src="./assets/icons/Cart.svg" alt="Cart" /></a>
-            <a href="#"><img src="./assets/icons/User.svg" alt="User" /></a>
+          <div class="icons flex items-center gap-[24px]">
+            <a href="#"
+              ><img src="./assets/icons/Cart.svg" alt="Cart" class="h-6 w-6"
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/User.svg" alt="User" class="h-6 w-6"
+            /></a>
           </div>
         </div>
       </div>
     </header>
-    <main class="mt-[20px]">
-      <section class="mt-[20px] min-h-[620px] w-full bg-[#F6F6F6]">
-        <div class="mx-[162px] flex min-h-[620px] items-center justify-between">
-          <div class="max-w-[520px]">
+    <main>
+      <section class="w-full bg-[#F6F6F6]">
+        <div class="mx-[162px] flex min-h-[560px] items-center justify-between">
+          <div class="max-w-[430px]">
             <h1
-              class="mt-[180px] text-[64px] leading-none font-semibold text-[#13192b]"
+              class="text-[56px] leading-[1.05] font-semibold tracking-[-1.12px] text-[#13192b]"
             >
               Fresh Arrivals Online
             </h1>
-            <p class="mt-[28px] text-[32px] text-[#5c6273]">
+            <p class="mt-[20px] text-[16px] leading-[1.6] text-[#5c6273]">
               Discover Our Newest Collection Today.
             </p>
             <a
               href="#"
-              class="mt-[64px] inline-flex items-center gap-4 rounded-[8px] bg-[#0E1422] px-[32px] py-[18px] text-[28px] text-white"
+              class="mt-[32px] inline-flex items-center gap-3 rounded-[8px] bg-[#0E1422] px-[24px] py-[14px] text-[16px] font-medium text-white"
             >
               <span>View Collection</span>
-              <img src="./assets/icons/Arrow Right.svg" alt="Arrow right" />
+              <img
+                src="./assets/icons/Arrow Right.svg"
+                alt="Arrow right"
+                class="h-5 w-5"
+              />
             </a>
           </div>
           <div
-            class="relative flex h-[620px] w-[700px] items-end justify-center"
+            class="relative flex h-[560px] w-[640px] items-end justify-center"
           >
             <img
               src="./assets/imgs/Ellipse.png"
               alt=""
-              class="absolute right-0 bottom-0 w-[600px] max-w-none"
+              class="absolute right-0 bottom-0 w-[520px] max-w-none"
             />
             <img
               src="./assets/imgs/Hero Image.png"
               alt=""
-              class="absolute right-[60px] bottom-0 w-[420px] max-w-none"
+              class="absolute right-[48px] bottom-0 w-[340px] max-w-none"
             />
+          </div>
+        </div>
+      </section>
+      <section class="mt-[88px] w-full bg-white">
+        <div class="mx-[174px] grid grid-cols-3 gap-[54px] py-[48px]">
+          <div class="shipping max-w-[320px]">
+            <div
+              class="mb-[16px] flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#F6F6F6]"
+            >
+              <img src="./assets/icons/Delivery.svg" alt="" class="h-6 w-6" />
+            </div>
+            <h3 class="text-[20px] font-semibold text-[#13192b]">
+              Free Shipping
+            </h3>
+            <p class="mt-[12px] text-[16px] leading-[1.6] text-[#5c6273]">
+              Upgrade your style today and get FREE shipping on all orders!
+              Don't miss out.
+            </p>
+          </div>
+          <div class="satisfaction max-w-[320px]">
+            <div
+              class="mb-[16px] flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#F6F6F6]"
+            >
+              <img src="./assets/icons/Star Badge.svg" alt="" class="h-6 w-6" />
+            </div>
+            <h3 class="text-[20px] font-semibold text-[#13192b]">
+              Satisfaction Guarantee
+            </h3>
+            <p class="mt-[12px] text-[16px] leading-[1.6] text-[#5c6273]">
+              Shop confidently with our Satisfaction Guarantee: Love it or get a
+              refund.
+            </p>
+          </div>
+          <div class="securepayment max-w-[320px]">
+            <div
+              class="mb-[16px] flex h-[48px] w-[48px] items-center justify-center rounded-full bg-[#F6F6F6]"
+            >
+              <img
+                src="./assets/icons/Shield Check.svg"
+                alt=""
+                class="h-6 w-6"
+              />
+            </div>
+            <h3 class="text-[20px] font-semibold text-[#13192b]">
+              Secure Payment
+            </h3>
+            <p class="mt-[12px] text-[16px] leading-[1.6] text-[#5c6273]">
+              Your security is our priority. Your payments are secure with us.
+            </p>
           </div>
         </div>
       </section>
