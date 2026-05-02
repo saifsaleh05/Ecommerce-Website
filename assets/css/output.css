@@ -7,6 +7,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -229,11 +232,20 @@
   .mt-\[12px\] {
     margin-top: 12px;
   }
+  .mt-\[14px\] {
+    margin-top: 14px;
+  }
   .mt-\[20px\] {
     margin-top: 20px;
   }
   .mt-\[22\.5px\] {
     margin-top: 22.5px;
+  }
+  .mt-\[24px\] {
+    margin-top: 24px;
+  }
+  .mt-\[25px\] {
+    margin-top: 25px;
   }
   .mt-\[28px\] {
     margin-top: 28px;
@@ -249,6 +261,9 @@
   }
   .mt-\[64px\] {
     margin-top: 64px;
+  }
+  .mt-\[72px\] {
+    margin-top: 72px;
   }
   .mt-\[88px\] {
     margin-top: 88px;
@@ -282,6 +297,9 @@
   }
   .mb-\[72px\] {
     margin-bottom: 72px;
+  }
+  .mb-\[80px\] {
+    margin-bottom: 80px;
   }
   .ml-25\.75 {
     margin-left: calc(var(--spacing) * 25.75);
@@ -340,6 +358,9 @@
   .h-\[84px\] {
     height: 84px;
   }
+  .h-\[312px\] {
+    height: 312px;
+  }
   .h-\[560px\] {
     height: 560px;
   }
@@ -397,6 +418,12 @@
   .max-w-\[520px\] {
     max-width: 520px;
   }
+  .max-w-\[1092px\] {
+    max-width: 1092px;
+  }
+  .max-w-\[1676px\] {
+    max-width: 1676px;
+  }
   .max-w-none {
     max-width: none;
   }
@@ -405,6 +432,9 @@
   }
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .flex-row {
     flex-direction: row;
@@ -445,6 +475,9 @@
   .gap-40\.5 {
     gap: calc(var(--spacing) * 40.5);
   }
+  .gap-\[20px\] {
+    gap: 20px;
+  }
   .gap-\[24px\] {
     gap: 24px;
   }
@@ -462,6 +495,9 @@
   }
   .gap-\[px\] {
     gap: px;
+  }
+  .rounded-\[4px\] {
+    border-radius: 4px;
   }
   .rounded-\[6px\] {
     border-radius: 6px;
@@ -507,20 +543,41 @@
   .bg-\[\#F6F6F6\] {
     background-color: #F6F6F6;
   }
+  .bg-\[F6F6F6\] {
+    background-color: F6F6F6;
+  }
   .bg-black {
     background-color: var(--color-black);
+  }
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
+  }
+  .bg-gray-300 {
+    background-color: var(--color-gray-300);
+  }
+  .bg-gray-400 {
+    background-color: var(--color-gray-400);
   }
   .bg-white {
     background-color: var(--color-white);
   }
+  .object-contain {
+    object-fit: contain;
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-\[20px\] {
+    padding-inline: 20px;
   }
   .px-\[24px\] {
     padding-inline: 24px;
   }
   .px-\[32px\] {
     padding-inline: 32px;
+  }
+  .py-\[8px\] {
+    padding-block: 8px;
   }
   .py-\[14px\] {
     padding-block: 14px;
@@ -539,6 +596,9 @@
   }
   .font-\[Inter\] {
     font-family: Inter;
+  }
+  .text-\[12px\] {
+    font-size: 12px;
   }
   .text-\[14px\] {
     font-size: 14px;
