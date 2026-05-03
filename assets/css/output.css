@@ -239,14 +239,23 @@
   .mt-\[88px\] {
     margin-top: 88px;
   }
+  .mt-\[152px\] {
+    margin-top: 152px;
+  }
   .mt-\[168px\] {
     margin-top: 168px;
   }
   .mb-\[16px\] {
     margin-bottom: 16px;
   }
+  .mb-\[48px\] {
+    margin-bottom: 48px;
+  }
   .mb-\[80px\] {
     margin-bottom: 80px;
+  }
+  .mb-\[192px\] {
+    margin-bottom: 192px;
   }
   .ml-\[14px\] {
     margin-left: 14px;
@@ -368,6 +377,9 @@
   .max-w-\[1092px\] {
     max-width: 1092px;
   }
+  .max-w-\[1116px\] {
+    max-width: 1116px;
+  }
   .max-w-none {
     max-width: none;
   }
@@ -479,6 +491,9 @@
   }
   .px-\[28px\] {
     padding-inline: 28px;
+  }
+  .py-\[6px\] {
+    padding-block: 6px;
   }
   .py-\[8px\] {
     padding-block: 8px;
