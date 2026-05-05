@@ -4,8 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Listing</title>
+    <link href="./assets/css/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body
+    class="bg-white text-[#13192b]"
+    style="font-family: &quot;Inter&quot;, sans-serif"
+  >
     <header>
       <div
         class="sale flex min-h-12 w-full items-center justify-center bg-[#0E1422] px-4 py-3"
@@ -38,9 +48,9 @@
           <nav
             class="list flex flex-wrap items-center gap-x-6 gap-y-3 text-[16px] text-[#5c6273] lg:ml-[72px] lg:flex-nowrap lg:gap-[40px]"
           >
-            <a href="#">Home</a>
+            <a href="./index.html">Home</a>
             <div class="categories flex items-center">
-              <a href="#">Categories</a>
+              <a href="./listing.html">Categories</a>
               <a href="#" class="ml-[14px]"
                 ><img src="./assets/icons/Chevron Down.svg" alt=""
               /></a>
@@ -76,7 +86,353 @@
         </div>
       </div>
     </header>
-
+    <main>
+      <section class="w-full bg-[#F6F6F6]">
+        <div
+          class="flex h-[64px] items-center px-4 sm:px-6 md:px-10 lg:mx-[174px] lg:px-0"
+        >
+          <div class="flex items-center gap-3 text-[14px] text-[#5c6273]">
+            <a href="./index.html">Ecommerce</a>
+            <img
+              src="./assets/icons/Chevron Right.svg"
+              alt=""
+              class="h-4 w-4"
+            />
+            <span class="text-[#13192b]">Search</span>
+          </div>
+        </div>
+      </section>
+      <section class="mt-[32px] mb-[144px]">
+        <div class="mr-[172px] ml-[175px]">
+          <div class="grid grid-cols-[248px_1fr] gap-x-[21px]">
+            <aside
+              class="h-[828px] rounded-[8px] border border-[#E6E7E8] px-[12px] py-[16px]"
+            >
+              <h2 class="text-[14px] font-medium text-[#13192b]">Categories</h2>
+              <div class="mt-[20px] space-y-[12px]">
+                <label
+                  class="flex items-center gap-3 border-b border-[#F0F1F3] pb-[12px] text-[14px] text-[#5c6273]"
+                >
+                  <input type="checkbox" class="h-4 w-4 rounded border-[#E6E7E8]" />
+                  <span>Perfume</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 border-b border-[#F0F1F3] pb-[12px] text-[14px] text-[#5c6273]"
+                >
+                  <input type="checkbox" class="h-4 w-4 rounded border-[#E6E7E8]" />
+                  <span>Trousers</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 border-b border-[#F0F1F3] pb-[12px] text-[14px] text-[#5c6273]"
+                >
+                  <input type="checkbox" class="h-4 w-4 rounded border-[#E6E7E8]" />
+                  <span>Shoe</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 border-b border-[#F0F1F3] pb-[12px] text-[14px] text-[#5c6273]"
+                >
+                  <input type="checkbox" class="h-4 w-4 rounded border-[#E6E7E8]" />
+                  <span>Handbag</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 border-b border-[#F0F1F3] pb-[12px] text-[14px] text-[#5c6273]"
+                >
+                  <input type="checkbox" class="h-4 w-4 rounded border-[#E6E7E8]" />
+                  <span>Hat</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 border-b border-[#F0F1F3] pb-[12px] text-[14px] text-[#5c6273]"
+                >
+                  <input type="checkbox" class="h-4 w-4 rounded border-[#E6E7E8]" />
+                  <span>Thermos</span>
+                </label>
+              </div>
+              <div class="mt-[28px]">
+                <h3 class="text-[14px] font-medium text-[#13192b]">Color</h3>
+                <div class="mt-[16px] flex items-center gap-[12px]">
+                  <button
+                    type="button"
+                    class="h-[24px] w-[24px] rounded-full border-2 border-[#13192b] bg-[#A8C7FF]"
+                    aria-label="Blue color"
+                  ></button>
+                  <button
+                    type="button"
+                    class="h-[16px] w-[16px] rounded-full bg-[#FFD37A]"
+                    aria-label="Yellow color"
+                  ></button>
+                  <button
+                    type="button"
+                    class="h-[16px] w-[16px] rounded-full bg-[#7FB18C]"
+                    aria-label="Green color"
+                  ></button>
+                  <button
+                    type="button"
+                    class="h-[16px] w-[16px] rounded-full bg-[#4D7CFE]"
+                    aria-label="Blue color"
+                  ></button>
+                </div>
+              </div>
+              <div class="mt-[28px]">
+                <h3 class="text-[14px] font-medium text-[#13192b]">Size</h3>
+                <div class="mt-[16px] flex flex-wrap gap-[8px]">
+                  <button
+                    type="button"
+                    class="flex h-[32px] w-[32px] items-center justify-center rounded-[6px] border border-[#13192b] text-[12px] text-[#13192b]"
+                  >
+                    S
+                  </button>
+                  <button
+                    type="button"
+                    class="flex h-[32px] w-[32px] items-center justify-center rounded-[6px] border border-[#E6E7E8] text-[12px] text-[#5c6273]"
+                  >
+                    M
+                  </button>
+                  <button
+                    type="button"
+                    class="flex h-[32px] w-[32px] items-center justify-center rounded-[6px] border border-[#E6E7E8] text-[12px] text-[#5c6273]"
+                  >
+                    L
+                  </button>
+                  <button
+                    type="button"
+                    class="flex h-[32px] w-[32px] items-center justify-center rounded-[6px] border border-[#E6E7E8] text-[12px] text-[#5c6273]"
+                  >
+                    XL
+                  </button>
+                  <button
+                    type="button"
+                    class="flex h-[32px] w-[40px] items-center justify-center rounded-[6px] border border-[#E6E7E8] text-[12px] text-[#5c6273]"
+                  >
+                    XXL
+                  </button>
+                </div>
+              </div>
+              <div class="mt-[28px]">
+                <h3 class="text-[14px] font-medium text-[#13192b]">Price</h3>
+                <div class="mt-[20px] px-[6px]">
+                  <div class="relative h-[18px]">
+                    <div class="absolute top-1/2 left-0 h-[2px] w-full -translate-y-1/2 bg-[#D9DDE3]"></div>
+                    <div class="absolute top-1/2 left-[12%] h-[2px] w-[38%] -translate-y-1/2 bg-[#13192b]"></div>
+                    <span class="absolute top-1/2 left-[10%] h-[12px] w-[12px] -translate-y-1/2 rounded-full bg-[#13192b]"></span>
+                    <span class="absolute top-1/2 left-[48%] h-[12px] w-[12px] -translate-y-1/2 rounded-full bg-[#13192b]"></span>
+                  </div>
+                  <div class="mt-[16px] inline-flex rounded-[6px] bg-[#0E1422] px-[10px] py-[6px] text-[12px] text-white">
+                    $ 890.00
+                  </div>
+                </div>
+              </div>
+            </aside>
+            <div>
+              <div class="flex items-start justify-between gap-6">
+                <div>
+                  <h2 class="text-[14px] font-medium text-[#13192b]">
+                    Applied Filters:
+                  </h2>
+                  <div class="mt-[16px] flex flex-wrap items-center gap-[12px]">
+                    <span
+                      class="inline-flex items-center gap-2 rounded-full border border-[#E6E7E8] px-[14px] py-[8px] text-[12px] text-[#13192b]"
+                    >
+                      Perfume
+                      <span aria-hidden="true">×</span>
+                    </span>
+                    <span
+                      class="inline-flex items-center gap-2 rounded-full border border-[#E6E7E8] px-[14px] py-[8px] text-[12px] text-[#13192b]"
+                    >
+                      Size: M
+                      <span aria-hidden="true">×</span>
+                    </span>
+                  </div>
+                  <p class="mt-[20px] text-[12px] text-[#5c6273]">
+                    Showing 1-9 of 36 Results.
+                  </p>
+                </div>
+                <div class="flex items-center gap-3 pt-[4px] text-[12px] text-[#5c6273]">
+                  <span>SORT BY</span>
+                  <img
+                    src="./assets/icons/Chevron Down.svg"
+                    alt=""
+                    class="h-4 w-4"
+                  />
+                </div>
+              </div>
+              <div class="mt-[20px] grid grid-cols-3 gap-[24px]">
+                <a href="./product.html" class="block">
+                  <img
+                    src="./assets/imgs/listing/listing1.png"
+                    alt="Classic Monochrome Tees"
+                    class="h-[280px] w-full rounded-[4px] bg-[#F6F6F6] object-contain"
+                  />
+                  <h3 class="mt-[20px] text-[14px] font-medium text-[#13192b]">
+                    Classic Monochrome Tees
+                  </h3>
+                  <div class="mt-[12px] flex items-center gap-[16px]">
+                    <span class="inline-flex rounded-full border border-[#E6E7E8] px-[14px] py-[6px] text-[12px] text-[#13192b]">
+                      IN STOCK
+                    </span>
+                    <span class="text-[14px] text-[#5c6273]">$35.00</span>
+                  </div>
+                </a>
+                <a href="./product.html" class="block">
+                  <img
+                    src="./assets/imgs/listing/listing2.png"
+                    alt="Monochromatic Wardrobe"
+                    class="h-[280px] w-full rounded-[4px] bg-[#F6F6F6] object-contain"
+                  />
+                  <h3 class="mt-[20px] text-[14px] font-medium text-[#13192b]">
+                    Monochromatic Wardrobe
+                  </h3>
+                  <div class="mt-[12px] flex items-center gap-[16px]">
+                    <span class="inline-flex rounded-full border border-[#E6E7E8] px-[14px] py-[6px] text-[12px] text-[#13192b]">
+                      IN STOCK
+                    </span>
+                    <span class="text-[14px] text-[#5c6273]">$27.00</span>
+                  </div>
+                </a>
+                <a href="./product.html" class="block">
+                  <img
+                    src="./assets/imgs/listing/listing3.png"
+                    alt="Essential Neutrals"
+                    class="h-[280px] w-full rounded-[4px] bg-[#F6F6F6] object-contain"
+                  />
+                  <h3 class="mt-[20px] text-[14px] font-medium text-[#13192b]">
+                    Essential Neutrals
+                  </h3>
+                  <div class="mt-[12px] flex items-center gap-[16px]">
+                    <span class="inline-flex rounded-full border border-[#E6E7E8] px-[14px] py-[6px] text-[12px] text-[#13192b]">
+                      IN STOCK
+                    </span>
+                    <span class="text-[14px] text-[#5c6273]">$22.00</span>
+                  </div>
+                </a>
+                <a href="./product.html" class="block">
+                  <img
+                    src="./assets/imgs/listing/listing4.png"
+                    alt="UTRAANET Black"
+                    class="h-[280px] w-full rounded-[4px] bg-[#F6F6F6] object-contain"
+                  />
+                  <h3 class="mt-[20px] text-[14px] font-medium text-[#13192b]">
+                    UTRAANET Black
+                  </h3>
+                  <div class="mt-[12px] flex items-center gap-[16px]">
+                    <span class="inline-flex rounded-full border border-[#E6E7E8] px-[14px] py-[6px] text-[12px] text-[#13192b]">
+                      IN STOCK
+                    </span>
+                    <span class="text-[14px] text-[#5c6273]">$43.00</span>
+                  </div>
+                </a>
+                <a href="./product.html" class="block">
+                  <img
+                    src="./assets/imgs/listing/listing5.png"
+                    alt="Elegant Ebony Sweatshirts"
+                    class="h-[280px] w-full rounded-[4px] bg-[#F6F6F6] object-contain"
+                  />
+                  <h3 class="mt-[20px] text-[14px] font-medium text-[#13192b]">
+                    Elegant Ebony Sweatshirts
+                  </h3>
+                  <div class="mt-[12px] flex items-center gap-[16px]">
+                    <span class="inline-flex rounded-full border border-[#E6E7E8] px-[14px] py-[6px] text-[12px] text-[#13192b]">
+                      IN STOCK
+                    </span>
+                    <span class="text-[14px] text-[#5c6273]">$35.00</span>
+                  </div>
+                </a>
+                <a href="./product.html" class="block">
+                  <img
+                    src="./assets/imgs/listing/listing6.png"
+                    alt="Sleek and Cozy Black"
+                    class="h-[280px] w-full rounded-[4px] bg-[#F6F6F6] object-contain"
+                  />
+                  <h3 class="mt-[20px] text-[14px] font-medium text-[#13192b]">
+                    Sleek and Cozy Black
+                  </h3>
+                  <div class="mt-[12px] flex items-center gap-[16px]">
+                    <span class="inline-flex rounded-full border border-[#E6E7E8] px-[14px] py-[6px] text-[12px] text-[#13192b]">
+                      IN STOCK
+                    </span>
+                    <span class="text-[14px] text-[#5c6273]">$57.00</span>
+                  </div>
+                </a>
+                <a href="./product.html" class="block">
+                  <img
+                    src="./assets/imgs/listing/listing7.png"
+                    alt="Raw Black Tees"
+                    class="h-[280px] w-full rounded-[4px] bg-[#F6F6F6] object-contain"
+                  />
+                  <h3 class="mt-[20px] text-[14px] font-medium text-[#13192b]">
+                    Raw Black Tees
+                  </h3>
+                  <div class="mt-[12px] flex items-center gap-[16px]">
+                    <span class="inline-flex rounded-full border border-[#E6E7E8] px-[14px] py-[6px] text-[12px] text-[#13192b]">
+                      IN STOCK
+                    </span>
+                    <span class="text-[14px] text-[#5c6273]">$19.00</span>
+                  </div>
+                </a>
+                <a href="./product.html" class="block">
+                  <img
+                    src="./assets/imgs/listing/listing8.png"
+                    alt="MOCKUP Black"
+                    class="h-[280px] w-full rounded-[4px] bg-[#F6F6F6] object-contain"
+                  />
+                  <h3 class="mt-[20px] text-[14px] font-medium text-[#13192b]">
+                    MOCKUP Black
+                  </h3>
+                  <div class="mt-[12px] flex items-center gap-[16px]">
+                    <span class="inline-flex rounded-full border border-[#E6E7E8] px-[14px] py-[6px] text-[12px] text-[#13192b]">
+                      IN STOCK
+                    </span>
+                    <span class="text-[14px] text-[#5c6273]">$30.00</span>
+                  </div>
+                </a>
+                <a href="./product.html" class="block">
+                  <img
+                    src="./assets/imgs/listing/listing9.png"
+                    alt="Athletic Shirt"
+                    class="h-[280px] w-full rounded-[4px] bg-[#F6F6F6] object-contain"
+                  />
+                  <h3 class="mt-[20px] text-[14px] font-medium text-[#13192b]">
+                    Athletic Shirt
+                  </h3>
+                  <div class="mt-[12px] flex items-center gap-[16px]">
+                    <span class="inline-flex rounded-full border border-[#E6E7E8] px-[14px] py-[6px] text-[12px] text-[#13192b]">
+                      IN STOCK
+                    </span>
+                    <span class="text-[14px] text-[#5c6273]">$35.00</span>
+                  </div>
+                </a>
+              </div>
+              <div class="mt-[48px] flex justify-center">
+                <div class="flex items-center rounded-[8px] border border-[#E6E7E8]">
+                  <button type="button" class="px-[14px] py-[10px] text-[#5c6273]">
+                    ‹
+                  </button>
+                  <button
+                    type="button"
+                    class="bg-[#F6F6F6] px-[14px] py-[10px] text-[12px] text-[#13192b]"
+                  >
+                    1
+                  </button>
+                  <button type="button" class="px-[14px] py-[10px] text-[12px] text-[#5c6273]">
+                    2
+                  </button>
+                  <span class="px-[14px] py-[10px] text-[12px] text-[#5c6273]">
+                    ...
+                  </span>
+                  <button type="button" class="px-[14px] py-[10px] text-[12px] text-[#5c6273]">
+                    23
+                  </button>
+                  <button type="button" class="px-[14px] py-[10px] text-[12px] text-[#5c6273]">
+                    24
+                  </button>
+                  <button type="button" class="px-[14px] py-[10px] text-[#5c6273]">
+                    ›
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
     <footer class="bg-white">
       <div class="bg-[#F6F6F6]">
         <div
