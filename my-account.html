@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forgot Password</title>
+    <title>My Account</title>
     <link href="./assets/css/output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -79,7 +79,7 @@
             <a href="./cart.html"
               ><img src="./assets/icons/Cart.svg" alt="Cart" class="h-6 w-6"
             /></a>
-            <a href="./login.html"
+            <a href="./my-account.html"
               ><img src="./assets/icons/User.svg" alt="User" class="h-6 w-6"
             /></a>
           </div>
@@ -94,7 +94,7 @@
           <h1
             class="text-[40px] font-semibold tracking-[-0.8px] text-[#13192b]"
           >
-            Forgot Password
+            My Account
           </h1>
           <div
             class="mt-[12px] flex items-center gap-3 text-[14px] text-[#5c6273]"
@@ -105,37 +105,139 @@
               alt=""
               class="h-4 w-4"
             />
-            <span class="text-[#13192b]">Forgot Password</span>
+            <span class="text-[#13192b]">My Account</span>
           </div>
         </div>
       </section>
-      <section class="px-4 py-[72px] sm:px-6 md:px-10 lg:px-[190px]">
-        <div class="flex min-h-[560px] items-center justify-center">
-          <div class="w-full max-w-[520px]">
-            <p class="text-[16px] leading-[1.8] text-[#5c6273]">
-              Please enter the email address associated with your account. We'll
-              promptly send you a link to reset your password.
-            </p>
-            <form class="mt-[28px]" action="./reset-password.html">
-              <div>
-                <label
-                  for="email"
-                  class="mb-[8px] block text-[16px] text-[#13192b]"
-                  >Email</label
-                >
-                <input
-                  id="email"
-                  type="email"
-                  class="h-[48px] w-full rounded-[8px] border border-[#E6E7E8] px-[16px] text-[14px] text-[#13192b] outline-none"
-                />
-              </div>
-              <button
-                type="submit"
-                class="mt-[28px] flex h-[48px] w-full items-center justify-center rounded-[8px] bg-[#0E1422] text-[16px] font-medium text-white"
+      <section class="px-4 py-[56px] sm:px-6 md:px-10 lg:px-[190px]">
+        <div
+          class="grid grid-cols-1 gap-10 lg:grid-cols-[224px_1fr] lg:gap-[42px]"
+        >
+          <aside class="lg:border-r lg:border-[#E6E7E8] lg:pr-[34px]">
+            <nav class="space-y-[12px]">
+              <div
+                class="flex h-[54px] w-full items-center gap-4 rounded-[10px] bg-[#F6F6F6] px-[20px] text-left text-[18px] font-medium text-[#13192b]"
               >
-                Send reset link
-              </button>
-            </form>
+                <img src="./assets/icons/Cart.svg" alt="" class="h-5 w-5" />
+                <span>Orders</span>
+              </div>
+              <div
+                class="flex h-[54px] w-full items-center gap-4 px-[20px] text-left text-[18px] text-[#5c6273]"
+              >
+                <img src="./assets/icons/Heart.svg" alt="" class="h-5 w-5" />
+                <span>Wishlist</span>
+              </div>
+              <div
+                class="flex h-[54px] w-full items-center gap-4 px-[20px] text-left text-[18px] text-[#5c6273]"
+              >
+                <img src="./assets/icons/Delivery.svg" alt="" class="h-5 w-5" />
+                <span>Address</span>
+              </div>
+              <div
+                class="flex h-[54px] w-full items-center gap-4 px-[20px] text-left text-[18px] text-[#5c6273]"
+              >
+                <img src="./assets/icons/Key.svg" alt="" class="h-5 w-5" />
+                <span>Password</span>
+              </div>
+              <div
+                class="flex h-[54px] w-full items-center gap-4 px-[20px] text-left text-[18px] text-[#5c6273]"
+              >
+                <img src="./assets/icons/User.svg" alt="" class="h-5 w-5" />
+                <span>Account Detail</span>
+              </div>
+              <a
+                href="./login.html"
+                class="flex h-[54px] items-center gap-4 px-[20px] text-[18px] text-[#5c6273]"
+              >
+                <img src="./assets/icons/Logout.svg" alt="" class="h-5 w-5" />
+                <span>Logout</span>
+              </a>
+            </nav>
+          </aside>
+          <div>
+            <h2 class="text-[28px] font-semibold text-[#13192b]">Orders</h2>
+            <div class="mt-[32px] space-y-[32px]">
+              <div
+                class="flex flex-col gap-6 border-b border-[#E6E7E8] pb-[28px] sm:flex-row sm:items-center sm:justify-between"
+              >
+                <div class="flex items-center gap-[20px]">
+                  <div
+                    class="flex h-[72px] w-[72px] items-center justify-center rounded-[8px] bg-[#F6F6F6]"
+                  >
+                    <img
+                      src="./assets/imgs/t-shirt1.png"
+                      alt="Raw Black T-Shirt Lineup"
+                      class="h-[58px] w-[58px] object-contain"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="text-[24px] font-medium text-[#13192b]">
+                      Raw Black T-Shirt Lineup
+                    </h3>
+                    <p class="mt-[8px] text-[14px] text-[#5c6273]">
+                      Ordered On: 27 July 2023
+                    </p>
+                    <p class="mt-[8px] text-[20px] font-medium text-[#13192b]">
+                      $70.00
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-[28px]"
+                >
+                  <span
+                    class="inline-flex w-fit border-b border-[#13192b] pb-[2px] text-[16px] text-[#13192b]"
+                    >Processing</span
+                  >
+                  <a
+                    href="./product.html"
+                    class="inline-flex h-[48px] items-center justify-center rounded-[8px] border border-[#13192b] px-[26px] text-[16px] font-medium text-[#13192b]"
+                  >
+                    View item
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between"
+              >
+                <div class="flex items-center gap-[20px]">
+                  <div
+                    class="flex h-[72px] w-[72px] items-center justify-center rounded-[8px] bg-[#F6F6F6]"
+                  >
+                    <img
+                      src="./assets/imgs/t-shirt2.png"
+                      alt="Monochromatic Wardrobe"
+                      class="h-[58px] w-[58px] object-contain"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="text-[24px] font-medium text-[#13192b]">
+                      Monochromatic Wardrobe
+                    </h3>
+                    <p class="mt-[8px] text-[14px] text-[#5c6273]">
+                      Ordered On: 9 March 2023
+                    </p>
+                    <p class="mt-[8px] text-[20px] font-medium text-[#13192b]">
+                      $27.00
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-[28px]"
+                >
+                  <span
+                    class="inline-flex w-fit border-b border-[#5CAF90] pb-[2px] text-[16px] text-[#13192b]"
+                    >Completed</span
+                  >
+                  <a
+                    href="./product.html"
+                    class="inline-flex h-[48px] items-center justify-center rounded-[8px] border border-[#13192b] px-[26px] text-[16px] font-medium text-[#13192b]"
+                  >
+                    View item
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
