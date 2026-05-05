@@ -273,6 +273,9 @@
   .mr-\[172px\] {
     margin-right: 172px;
   }
+  .mb-\[8px\] {
+    margin-bottom: 8px;
+  }
   .mb-\[16px\] {
     margin-bottom: 16px;
   }
@@ -629,6 +632,13 @@
       margin-block-end: calc(16px * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .space-y-\[18px\] {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(18px * var(--tw-space-y-reverse));
+      margin-block-end: calc(18px * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .space-y-\[20px\] {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -729,6 +739,9 @@
   .bg-\[\#F6F6F6\] {
     background-color: #F6F6F6;
   }
+  .bg-\[\#F6\] {
+    background-color: #F6;
+  }
   .bg-\[\#FFD37A\] {
     background-color: #FFD37A;
   }
@@ -737,6 +750,9 @@
   }
   .object-contain {
     object-fit: contain;
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
   }
   .p-\[24px\] {
     padding: 24px;
@@ -1015,6 +1031,11 @@
       align-self: auto;
     }
   }
+  .sm\:p-8 {
+    @media (width >= 40rem) {
+      padding: calc(var(--spacing) * 8);
+    }
+  }
   .sm\:px-6 {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 6);
@@ -1171,6 +1192,11 @@
       grid-template-columns: 1fr 1fr;
     }
   }
+  .lg\:grid-cols-\[1fr_336px\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 1fr 336px;
+    }
+  }
   .lg\:grid-cols-\[174px_1fr\] {
     @media (width >= 64rem) {
       grid-template-columns: 174px 1fr;
@@ -1241,6 +1267,22 @@
       column-gap: 21px;
     }
   }
+  .lg\:border-r {
+    @media (width >= 64rem) {
+      border-right-style: var(--tw-border-style);
+      border-right-width: 1px;
+    }
+  }
+  .lg\:border-\[\#E6E7E8\] {
+    @media (width >= 64rem) {
+      border-color: #E6E7E8;
+    }
+  }
+  .lg\:p-\[32px\] {
+    @media (width >= 64rem) {
+      padding: 32px;
+    }
+  }
   .lg\:px-0 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 0);
@@ -1264,6 +1306,11 @@
   .lg\:pt-\[72px\] {
     @media (width >= 64rem) {
       padding-top: 72px;
+    }
+  }
+  .lg\:pr-\[40px\] {
+    @media (width >= 64rem) {
+      padding-right: 40px;
     }
   }
   .lg\:pr-\[213px\] {
