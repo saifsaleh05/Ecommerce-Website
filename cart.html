@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link href="./assets/css/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-white text-[#13192b]"
+    style="font-family: &quot;Inter&quot;, sans-serif"
+  >
+    <header>
+      <div
+        class="sale flex min-h-12 w-full items-center justify-center bg-[#0E1422] px-4 py-3"
+      >
+        <p
+          class="flex flex-wrap items-center justify-center gap-2 text-center text-[14px] text-white sm:gap-3"
+        >
+          <span>Get 25% OFF on your first order.</span>
+          <a href="#" class="font-medium text-white">Order Now</a>
+        </p>
+      </div>
+      <div
+        class="container mx-auto flex flex-col gap-5 px-4 py-5 sm:px-6 md:px-8 lg:h-[84px] lg:flex-row lg:items-center lg:justify-between lg:gap-0 lg:px-0 lg:py-0"
+      >
+        <div
+          class="flex w-full flex-col gap-5 lg:w-auto lg:flex-row lg:items-center lg:gap-[40px]"
+        >
+          <div class="logo">
+            <a href="./index.html" class="flex items-center gap-3">
+              <img
+                src="./assets/icons/Logomark.png"
+                alt="Ecommerce logo"
+                class="h-[40px] w-[40px]"
+              />
+              <span class="text-[24px] font-semibold tracking-[-0.48px]">
+                Ecommerce
+              </span>
+            </a>
+          </div>
+          <nav
+            class="list flex flex-wrap items-center gap-x-6 gap-y-3 text-[16px] text-[#5c6273] lg:ml-[72px] lg:flex-nowrap lg:gap-[40px]"
+          >
+            <a href="./index.html">Home</a>
+            <div class="categories flex items-center">
+              <a href="./listing.html">Categories</a>
+              <a href="#" class="ml-[14px]"
+                ><img src="./assets/icons/Chevron Down.svg" alt=""
+              /></a>
+            </div>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+        <div
+          class="flex w-full flex-col gap-4 sm:flex-row sm:items-center lg:w-auto lg:gap-[24px]"
+        >
+          <div
+            class="searchbar flex h-[44px] w-full items-center gap-3 rounded-[6px] border border-[#E6E7E8] px-4 sm:w-[280px]"
+          >
+            <img src="./assets/icons/Search.svg" alt="Search" class="h-5 w-5" />
+            <input
+              type="search"
+              name="searchbar"
+              placeholder="Search products"
+              class="w-full text-[14px] text-[#5c6273] outline-none"
+            />
+          </div>
+          <div
+            class="icons flex items-center gap-[24px] self-start sm:self-auto"
+          >
+            <a href="./cart.html"
+              ><img src="./assets/icons/Cart.svg" alt="Cart" class="h-6 w-6"
+            /></a>
+            <a href="#"
+              ><img src="./assets/icons/User.svg" alt="User" class="h-6 w-6"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="w-full bg-[#F6F6F6]">
+        <div
+          class="flex min-h-[172px] flex-col justify-center px-4 py-10 sm:px-6 md:px-10 lg:px-[190px]"
+        >
+          <h1 class="text-[40px] font-semibold tracking-[-0.8px] text-[#13192b]">
+            Cart
+          </h1>
+          <div class="mt-[12px] flex items-center gap-3 text-[14px] text-[#5c6273]">
+            <a href="./index.html">Ecommerce</a>
+            <img
+              src="./assets/icons/Chevron Right.svg"
+              alt=""
+              class="h-4 w-4"
+            />
+            <span class="text-[#13192b]">Cart</span>
+          </div>
+        </div>
+      </section>
+      <section class="px-4 py-[56px] sm:px-6 md:px-10 lg:px-[190px]">
+        <div class="grid grid-cols-1 gap-10 xl:grid-cols-[1fr_366px] xl:gap-[64px]">
+          <div>
+            <h2 class="text-[28px] font-semibold text-[#13192b]">Your cart</h2>
+            <div class="mt-[16px] border-t border-[#E6E7E8]"></div>
+            <div class="mt-[36px] space-y-[44px]">
+              <div class="grid grid-cols-[86px_1fr] gap-[20px] sm:grid-cols-[86px_1fr_auto_auto_auto] sm:items-center">
+                <div class="flex h-[86px] w-[86px] items-center justify-center rounded-[4px] bg-[#F6F6F6]">
+                  <img
+                    src="./assets/imgs/black t-shirt2.png"
+                    alt="Raw Black T-Shirt Lineup"
+                    class="h-[58px] w-auto object-contain"
+                  />
+                </div>
+                <div class="sm:pr-4">
+                  <h3 class="text-[18px] font-medium text-[#13192b]">
+                    Raw Black T-Shirt Lineup
+                  </h3>
+                  <div class="mt-[12px] flex items-center gap-2 text-[16px] text-[#5c6273]">
+                    <span>Color:</span>
+                    <span class="h-[14px] w-[14px] rounded-full bg-[#7FB18C]"></span>
+                    <span>—</span>
+                    <span>Size: M</span>
+                  </div>
+                </div>
+                <p class="mt-3 text-[18px] font-medium text-[#13192b] sm:mt-0">
+                  $75.00
+                </p>
+                <div
+                  class="mt-3 flex h-[44px] w-[118px] items-center justify-between rounded-[8px] border border-[#E6E7E8] px-[14px] sm:mt-0"
+                >
+                  <button type="button" class="text-[24px] text-[#5c6273]">−</button>
+                  <span class="text-[16px] font-medium text-[#13192b]">1</span>
+                  <button type="button" class="text-[24px] text-[#5c6273]">+</button>
+                </div>
+                <button
+                  type="button"
+                  class="mt-3 flex h-[44px] w-[44px] items-center justify-center rounded-[8px] bg-[#F6F6F6] text-[28px] text-[#5c6273] sm:mt-0"
+                >
+                  ×
+                </button>
+              </div>
+              <div class="grid grid-cols-[86px_1fr] gap-[20px] sm:grid-cols-[86px_1fr_auto_auto_auto] sm:items-center">
+                <div class="flex h-[86px] w-[86px] items-center justify-center rounded-[4px] bg-[#F6F6F6]">
+                  <img
+                    src="./assets/imgs/t-shirt3.png"
+                    alt="Essential Neutrals"
+                    class="h-[58px] w-auto object-contain"
+                  />
+                </div>
+                <div class="sm:pr-4">
+                  <h3 class="text-[18px] font-medium text-[#13192b]">
+                    Essential Neutrals
+                  </h3>
+                  <div class="mt-[12px] flex items-center gap-2 text-[16px] text-[#5c6273]">
+                    <span>Color:</span>
+                    <span class="h-[14px] w-[14px] rounded-full bg-[#A8C7FF]"></span>
+                    <span>—</span>
+                    <span>Size: M</span>
+                  </div>
+                </div>
+                <p class="mt-3 text-[18px] font-medium text-[#13192b] sm:mt-0">
+                  $22.00
+                </p>
+                <div
+                  class="mt-3 flex h-[44px] w-[118px] items-center justify-between rounded-[8px] border border-[#E6E7E8] px-[14px] sm:mt-0"
+                >
+                  <button type="button" class="text-[24px] text-[#5c6273]">−</button>
+                  <span class="text-[16px] font-medium text-[#13192b]">1</span>
+                  <button type="button" class="text-[24px] text-[#5c6273]">+</button>
+                </div>
+                <button
+                  type="button"
+                  class="mt-3 flex h-[44px] w-[44px] items-center justify-center rounded-[8px] bg-[#F6F6F6] text-[28px] text-[#5c6273] sm:mt-0"
+                >
+                  ×
+                </button>
+              </div>
+            </div>
+          </div>
+          <aside class="rounded-[8px] border border-[#E6E7E8] p-[24px]">
+            <h2 class="text-[32px] font-semibold text-[#13192b]">Order Summary</h2>
+            <div class="mt-[32px] space-y-[20px] text-[18px] text-[#13192b]">
+              <div class="flex items-center justify-between">
+                <span class="text-[#5c6273]">Subtotal</span>
+                <span>$ 90.00</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[#5c6273]">Shipping:</span>
+                <span>Free</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-[#5c6273]">Tax:</span>
+                <span>$ 3.00</span>
+              </div>
+            </div>
+            <div class="mt-[32px] border-t border-[#E6E7E8] pt-[32px]">
+              <div class="flex items-center justify-between text-[22px] font-medium text-[#13192b]">
+                <span>Total</span>
+                <span>$ 100.00</span>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="mt-[32px] flex h-[48px] w-full items-center justify-center rounded-[8px] bg-[#0E1422] text-[18px] font-medium text-white"
+            >
+              Checkout
+            </button>
+            <a
+              href="./listing.html"
+              class="mt-[28px] block text-center text-[16px] underline text-[#13192b]"
+            >
+              Continue Shopping
+            </a>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-white">
+      <div class="bg-[#F6F6F6]">
+        <div
+          class="flex min-h-[180px] flex-col gap-6 px-4 py-10 sm:px-6 md:px-10 lg:mx-[174px] lg:flex-row lg:items-center lg:justify-between lg:gap-[32px] lg:px-0 lg:py-0"
+        >
+          <div class="max-w-[360px]">
+            <h2
+              class="text-[28px] font-semibold tracking-[-0.64px] text-[#13192b] sm:text-[32px]"
+            >
+              Join Our Newsletter
+            </h2>
+            <p class="mt-[12px] text-[16px] leading-[1.7] text-[#5c6273]">
+              We love to surprise our subscribers with occasional gifts.
+            </p>
+          </div>
+          <form class="flex w-full flex-col gap-[16px] sm:flex-row lg:w-auto">
+            <input
+              type="email"
+              name="newsletter-email"
+              placeholder="Your email address"
+              class="h-[48px] w-full rounded-[8px] border border-[#E6E7E8] px-[16px] text-[14px] text-[#5c6273] outline-none sm:w-[360px]"
+            />
+            <button
+              type="submit"
+              class="h-[48px] rounded-[8px] bg-[#0E1422] px-[28px] text-[16px] font-medium text-white"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="px-4 py-[72px] sm:px-6 md:px-10 lg:mx-[174px] lg:px-0">
+        <div
+          class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1.2fr] lg:gap-[48px]"
+        >
+          <div>
+            <a href="./index.html" class="flex items-center gap-3">
+              <img
+                src="./assets/icons/Logomark.png"
+                alt="Ecommerce logo"
+                class="h-[40px] w-[40px]"
+              />
+              <span class="text-[24px] font-semibold tracking-[-0.48px]">
+                Ecommerce
+              </span>
+            </a>
+            <p
+              class="mt-[24px] max-w-[260px] text-[14px] leading-[1.8] text-[#5c6273]"
+            >
+              DevCut is a YouTube channel for practical project-based learning.
+            </p>
+            <div class="mt-[28px] flex items-center gap-[16px]">
+              <a href="#"
+                ><img
+                  src="./assets/icons/Github.svg"
+                  alt="Github"
+                  class="h-6 w-6"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./assets/icons/Instagram.svg"
+                  alt="Instagram"
+                  class="h-6 w-6"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./assets/icons/Youtube.svg"
+                  alt="YouTube"
+                  class="h-6 w-6"
+              /></a>
+            </div>
+          </div>
+          <div>
+            <h3
+              class="text-[14px] font-medium uppercase tracking-[0.56px] text-[#5c6273]"
+            >
+              Support
+            </h3>
+            <div class="mt-[24px] space-y-[16px] text-[14px] text-[#5c6273]">
+              <a href="#" class="block">FAQ</a>
+              <a href="#" class="block">Terms of use</a>
+              <a href="#" class="block">Privacy Policy</a>
+            </div>
+          </div>
+          <div>
+            <h3
+              class="text-[14px] font-medium uppercase tracking-[0.56px] text-[#5c6273]"
+            >
+              Company
+            </h3>
+            <div class="mt-[24px] space-y-[16px] text-[14px] text-[#5c6273]">
+              <a href="#" class="block">About us</a>
+              <a href="#" class="block">Contact</a>
+              <a href="#" class="block">Careers</a>
+            </div>
+          </div>
+          <div>
+            <h3
+              class="text-[14px] font-medium uppercase tracking-[0.56px] text-[#5c6273]"
+            >
+              Shop
+            </h3>
+            <div class="mt-[24px] space-y-[16px] text-[14px] text-[#5c6273]">
+              <a href="#" class="block">My Account</a>
+              <a href="#" class="block">Checkout</a>
+              <a href="./cart.html" class="block">Cart</a>
+            </div>
+          </div>
+          <div>
+            <h3
+              class="text-[14px] font-medium uppercase tracking-[0.56px] text-[#5c6273]"
+            >
+              Accepted Payments
+            </h3>
+            <div class="mt-[24px] flex flex-wrap items-center gap-[16px]">
+              <img
+                src="./assets/icons/Mastercard.png"
+                alt="Mastercard"
+                class="h-[24px] w-auto"
+              />
+              <img
+                src="./assets/icons/Amex.png"
+                alt="Amex"
+                class="h-[24px] w-auto"
+              />
+              <img
+                src="./assets/icons/Visa.png"
+                alt="Visa"
+                class="h-[24px] w-auto"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="mt-[56px] border-t border-[#E6E7E8] pt-[24px] text-center">
+          <p class="text-[14px] text-[#5c6273]">
+            © 2023 DevCut. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
