@@ -408,6 +408,9 @@
   .h-\[828px\] {
     height: 828px;
   }
+  .h-px {
+    height: 1px;
+  }
   .max-h-full {
     max-height: 100%;
   }
@@ -616,6 +619,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-end {
+    justify-content: flex-end;
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -785,6 +791,9 @@
   }
   .bg-\[\#D9DDE3\] {
     background-color: #D9DDE3;
+  }
+  .bg-\[\#E6E7E8\] {
+    background-color: #E6E7E8;
   }
   .bg-\[\#EAF4EC\] {
     background-color: #EAF4EC;
