@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link href="./assets/css/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-[#F6F6F6] text-[#13192b]"
+    style="font-family: &quot;Inter&quot;, sans-serif"
+  >
+    <main class="min-h-screen">
+      <div class="grid min-h-screen grid-cols-1 lg:grid-cols-[360px_1fr]">
+        <aside class="flex flex-col bg-white lg:border-r lg:border-[#E6E7E8]">
+          <div class="px-6 py-8 lg:px-[48px] lg:py-[36px]">
+            <a href="./admin.html" class="flex items-center gap-4">
+              <img
+                src="./assets/icons/Logomark.png"
+                alt="Admin logo"
+                class="h-[44px] w-[44px]"
+              />
+              <span class="text-[34px] font-semibold tracking-[-0.68px]">
+                Admin
+              </span>
+            </a>
+          </div>
+
+          <div class="px-6 lg:px-[30px]">
+            <nav class="space-y-[16px]">
+              <a
+                href="./dashboard.html"
+                class="flex h-[56px] items-center gap-5 rounded-[14px] bg-[#F6F6F6] px-[32px] text-[18px] font-medium text-[#13192b]"
+              >
+                <img
+                  src="./assets/icons/Dashboard.svg"
+                  alt=""
+                  class="h-6 w-6"
+                />
+                <span>Dashboard</span>
+              </a>
+              <a
+                href="#"
+                class="flex h-[56px] items-center gap-5 px-[32px] text-[18px] text-[#5c6273]"
+              >
+                <img src="./assets/icons/Product.svg" alt="" class="h-6 w-6" />
+                <span>Products</span>
+              </a>
+              <a
+                href="#"
+                class="flex h-[56px] items-center gap-5 px-[32px] text-[18px] text-[#5c6273]"
+              >
+                <img src="./assets/icons/Cart.svg" alt="" class="h-6 w-6" />
+                <span>Orders</span>
+              </a>
+              <a
+                href="#"
+                class="flex h-[56px] items-center gap-5 px-[32px] text-[18px] text-[#5c6273]"
+              >
+                <img src="./assets/icons/Users.svg" alt="" class="h-6 w-6" />
+                <span>Customers</span>
+              </a>
+              <a
+                href="#"
+                class="flex h-[56px] items-center gap-5 px-[32px] text-[18px] text-[#5c6273]"
+              >
+                <img src="./assets/icons/Star.svg" alt="" class="h-6 w-6" />
+                <span>Reviews</span>
+              </a>
+              <a
+                href="#"
+                class="flex h-[56px] items-center gap-5 px-[32px] text-[18px] text-[#5c6273]"
+              >
+                <img src="./assets/icons/Settings.svg" alt="" class="h-6 w-6" />
+                <span>Settings</span>
+              </a>
+            </nav>
+          </div>
+
+          <div class="mt-auto border-t border-[#E6E7E8] px-6 py-8 lg:px-[30px]">
+            <a
+              href="#"
+              class="flex h-[56px] items-center gap-5 px-[32px] text-[18px] text-[#5c6273]"
+            >
+              <img src="./assets/icons/Add.svg" alt="" class="h-6 w-6" />
+              <span>Extras</span>
+            </a>
+          </div>
+        </aside>
+
+        <section>
+          <div
+            class="flex items-center justify-between border-b border-[#E6E7E8] px-6 py-8 sm:px-8 lg:px-[64px] lg:py-[36px]"
+          >
+            <div class="flex items-center gap-4 text-[18px] text-[#5c6273]">
+              <span>Admin</span>
+              <img
+                src="./assets/icons/Chevron Right.svg"
+                alt=""
+                class="h-5 w-5"
+              />
+              <span class="font-medium text-[#13192b]">Dashboard</span>
+            </div>
+            <a href="./admin.html">
+              <img
+                src="./assets/icons/Logout.svg"
+                alt="Logout"
+                class="h-7 w-7"
+              />
+            </a>
+          </div>
+
+          <div class="px-6 py-8 sm:px-8 lg:px-[64px] lg:py-[56px]">
+            <div class="grid grid-cols-1 gap-6 xl:grid-cols-3">
+              <article
+                class="rounded-[16px] border border-[#E6E7E8] bg-white p-8 shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
+              >
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <h2 class="text-[24px] font-semibold text-[#13192b]">
+                      Total Sales
+                    </h2>
+                    <p
+                      class="mt-2 text-[14px] uppercase tracking-[1.4px] text-[#5c6273]"
+                    >
+                      This month
+                    </p>
+                  </div>
+                  <span class="text-[28px] font-semibold tracking-[-0.56px]"
+                    >$ 4,235</span
+                  >
+                </div>
+                <div class="mt-[56px] flex h-[84px] items-end gap-[8px]">
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 38px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 60px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 52px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 66px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 56px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 44px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 20px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 56px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 52px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 34px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 18px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 28px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 44px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 62px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 68px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 62px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 46px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 66px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 46px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 54px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 60px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 42px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 58px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 52px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 40px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 54px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 24px"
+                  ></span>
+                  <span
+                    class="w-[8px] rounded-t-[2px] bg-[#4A7BFF]"
+                    style="height: 40px"
+                  ></span>
+                </div>
+              </article>
+
+              <article
+                class="rounded-[16px] border border-[#E6E7E8] bg-white p-8 shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
+              >
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <h2 class="text-[24px] font-semibold text-[#13192b]">
+                      Customers
+                    </h2>
+                    <p
+                      class="mt-2 text-[14px] uppercase tracking-[1.4px] text-[#5c6273]"
+                    >
+                      This month
+                    </p>
+                  </div>
+                  <span class="text-[28px] font-semibold tracking-[-0.56px]"
+                    >2,571</span
+                  >
+                </div>
+                <div class="mt-[48px]">
+                  <svg viewBox="0 0 360 90" class="h-[90px] w-full">
+                    <polyline
+                      fill="none"
+                      stroke="#4A7BFF"
+                      stroke-width="3"
+                      points="10,68 30,30 42,66 66,64 82,28 104,50 120,34 144,32 156,50 176,46 188,58 202,30 216,56 232,34 246,38 260,54 276,58 294,60 310,40 324,56 346,32 356,68"
+                    />
+                  </svg>
+                </div>
+              </article>
+
+              <article
+                class="rounded-[16px] border border-[#E6E7E8] bg-white p-8 shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
+              >
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <h2 class="text-[24px] font-semibold text-[#13192b]">
+                      Orders
+                    </h2>
+                    <p
+                      class="mt-2 text-[14px] uppercase tracking-[1.4px] text-[#5c6273]"
+                    >
+                      Monthly goals : 1,000
+                    </p>
+                  </div>
+                  <span class="text-[28px] font-semibold tracking-[-0.56px]">
+                    734
+                  </span>
+                </div>
+                <div class="mt-[86px]">
+                  <p class="text-[16px] text-[#5c6273]">266 Left</p>
+                  <div class="mt-[10px] h-[12px] rounded-full bg-[#EEF2FF]">
+                    <div
+                      class="h-[12px] w-[82%] rounded-full bg-[#4A7BFF]"
+                    ></div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="mt-6 grid grid-cols-1 gap-6 xl:grid-cols-[450px_1fr]">
+              <article
+                class="rounded-[16px] border border-[#E6E7E8] bg-white shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
+              >
+                <div class="border-b border-[#E6E7E8] px-8 py-8">
+                  <h2 class="text-[24px] font-semibold text-[#13192b]">
+                    Best Selling
+                  </h2>
+                  <p
+                    class="mt-2 text-[14px] uppercase tracking-[1.4px] text-[#5c6273]"
+                  >
+                    This month
+                  </p>
+                </div>
+                <div class="px-8 py-8">
+                  <div class="flex items-baseline gap-3">
+                    <span class="text-[40px] font-semibold tracking-[-0.8px]">
+                      $2,400
+                    </span>
+                    <span class="text-[18px] text-[#5c6273]"
+                      >— Total Sales</span
+                    >
+                  </div>
+                  <div class="mt-8 space-y-4">
+                    <div
+                      class="inline-flex rounded-full border border-[#E6E7E8] px-5 py-3 text-[14px] text-[#5c6273]"
+                    >
+                      Classic Monochrome Tees —
+                      <span class="ml-1 font-medium text-[#13192b]"
+                        >$940 Sales</span
+                      >
+                    </div>
+                    <div
+                      class="inline-flex rounded-full border border-[#E6E7E8] px-5 py-3 text-[14px] text-[#5c6273]"
+                    >
+                      Monochromatic Wardrobe —
+                      <span class="ml-1 font-medium text-[#13192b]"
+                        >$790 Sales</span
+                      >
+                    </div>
+                    <div
+                      class="inline-flex rounded-full border border-[#E6E7E8] px-5 py-3 text-[14px] text-[#5c6273]"
+                    >
+                      Essential Neutrals —
+                      <span class="ml-1 font-medium text-[#13192b]"
+                        >$740 Sales</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="mt-10 flex justify-center pb-6">
+                    <div
+                      class="h-[180px] w-[180px] rounded-full bg-[conic-gradient(#4A7BFF_0_42%,#6F8EFF_42%_70%,#A9B8FF_70%_100%)] p-[12px]"
+                    >
+                      <div class="h-full w-full rounded-full bg-white"></div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article
+                class="overflow-hidden rounded-[16px] border border-[#E6E7E8] bg-white shadow-[0_1px_2px_rgba(0,0,0,0.03)]"
+              >
+                <div
+                  class="flex items-center gap-4 border-b border-[#E6E7E8] px-8 py-8"
+                >
+                  <h2 class="text-[24px] font-semibold text-[#13192b]">
+                    Recent Orders
+                  </h2>
+                  <a
+                    href="#"
+                    class="inline-flex h-[40px] items-center justify-center rounded-full bg-[#F6F6F6] px-6 text-[16px] text-[#5c6273]"
+                  >
+                    View All
+                  </a>
+                </div>
+
+                <div class="overflow-x-auto">
+                  <table class="min-w-full">
+                    <thead>
+                      <tr
+                        class="border-b border-[#E6E7E8] text-left text-[16px] text-[#5c6273]"
+                      >
+                        <th class="px-8 py-5 font-medium">Item</th>
+                        <th class="px-8 py-5 font-medium">Date</th>
+                        <th class="px-8 py-5 font-medium">Total</th>
+                        <th class="px-8 py-5 font-medium">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-[18px] text-[#5c6273]">
+                      <tr class="border-b border-[#E6E7E8]">
+                        <td class="px-8 py-7">Mens Black T-Shirts</td>
+                        <td class="px-8 py-7">20 Mar, 2023</td>
+                        <td class="px-8 py-7">$75.00</td>
+                        <td class="px-8 py-7 text-[#13192b]">Processing</td>
+                      </tr>
+                      <tr class="border-b border-[#E6E7E8]">
+                        <td class="px-8 py-7">Essential Neutrals</td>
+                        <td class="px-8 py-7">19 Mar, 2023</td>
+                        <td class="px-8 py-7">$22.00</td>
+                        <td class="px-8 py-7 text-[#13192b]">Processing</td>
+                      </tr>
+                      <tr class="border-b border-[#E6E7E8]">
+                        <td class="px-8 py-7">Sleek and Cozy Black</td>
+                        <td class="px-8 py-7">7 Feb, 2023</td>
+                        <td class="px-8 py-7">$57.00</td>
+                        <td class="px-8 py-7 text-[#13192b]">Completed</td>
+                      </tr>
+                      <tr class="border-b border-[#E6E7E8]">
+                        <td class="px-8 py-7">MOCKUP Black</td>
+                        <td class="px-8 py-7">29 Jan, 2023</td>
+                        <td class="px-8 py-7">$30.00</td>
+                        <td class="px-8 py-7 text-[#13192b]">Completed</td>
+                      </tr>
+                      <tr>
+                        <td class="px-8 py-7">Monochromatic Wardrobe</td>
+                        <td class="px-8 py-7">27 Jan, 2023</td>
+                        <td class="px-8 py-7">$27.00</td>
+                        <td class="px-8 py-7 text-[#13192b]">Completed</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
